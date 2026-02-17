@@ -40,4 +40,12 @@ public class OrderItem {
 		this.product = product;
 	}
 	
+	public String toString() {
+		return getProduct().getName() 
+				+ ", $" +
+				String.format("%2.f", price) 
+				+ ", Quantity: " + quantity +
+				", Subtottal: $" +
+				String.format("%2.f", subTotal());
+	}
 }
