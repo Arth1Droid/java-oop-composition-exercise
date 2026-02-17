@@ -4,6 +4,9 @@ public class OrderItem {
 	private Integer quantity;
 	private Double price;
 	
+	public OrderItem() {
+		
+	}
 	public OrderItem(Integer quantity, Double price) {
 		this.price = price;
 		this.quantity = quantity;
